@@ -52,3 +52,11 @@ header #headerInner #headRight #bgm-switch #bgmTrackList .bgm14 { width: 125px; 
 /*--------------------------------------------------
 	Contents Area
 --------------------------------------------------*/
+
+#wrapper {background: url('img/portal_bg.jpg') repeat-x center -110px; min-width:1300px;}
+
+#wrapper #loader { position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 100; }
+#wrapper #loader p { background: url('img/loader.gif') no-repeat 0 0; width: 16px; height: 16px; position: absolute; left: 51%; top: 51%; text-indent: -9999px; }
+#wrapper #contents { height: 759px; }
+#wrapper #contents.topPage { height: 800px; }
+#wrapper #contents .contentsInner { width: 1120px; margin: 0 auto; position: relative; /*min-width:1120px;*/ }
