@@ -20,8 +20,8 @@ header #headerInner ul.gnav li a{display: block; height:30px; background: url('i
 header #headerInner ul.gnav li a:hover{background-position: 0px 0;}
 header #headerInner ul.gnav .gnav01 a{margin-left:9px;}
 header #headerInner ul.gnav .gnav01 a img{height:40px; width: 140px;}
-header #headerInner ul.gnav .gnav02 a img{height:40px; width: 95px;}
-header #headerInner ul.gnav .gnav03 a img{height:40px; width: 102px;}
+header #headerInner ul.gnav .gnav02 a img{height:40px; width: 120px;}
+header #headerInner ul.gnav .gnav03 a img{height:40px; width: 115px;}
 
 
 
