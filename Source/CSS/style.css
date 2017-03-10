@@ -60,3 +60,18 @@ header #headerInner #headRight #bgm-switch #bgmTrackList .bgm14 { width: 125px; 
 #wrapper #contents { height: 759px; }
 #wrapper #contents.topPage { height: 800px; }
 #wrapper #contents .contentsInner { width: 1120px; margin: 0 auto; position: relative; /*min-width:1120px;*/ }
+
+/*--------------------------------------------------
+	Footer Area
+--------------------------------------------------*/
+footer { background: url('img/bg_pattern.jpg') repeat center 0; }
+footer .footerInner { border-top: 5px solid #877220; padding: 12px 0 36px;}
+footer .footerInner .inner { width: 1150px; margin: 0 auto; overflow: hidden; }
+footer .footerInner .inner .footerLeft {float: left; }
+footer .footerInner .inner ul li { display: inline-block; margin: 0 15px 0 0; vertical-align: middle; line-height: 0; }
+footer .footerInner .inner ul li.share { margin: 0 6px 0 0; height: 25px;}
+footer .footerInner .inner ul li.share img { vertical-align: top; margin: 7px 0 0 0; }
+footer .footerInner .inner ul li.share iframe { display: inline-block; width: 95px !important ; vertical-align: top; margin: 7px 0 0 0; }
+footer .footerInner .inner .footerRight { float: right; width: 365px; color: #ababab; text-align: right; }
+footer .footerInner .inner .footerRight .copyright { padding: 5px 0 10px 0; }
+
