@@ -13,7 +13,7 @@ header #headerInner {width: 1120px; margin: 0 auto; padding: 0 0 10px 0;}
 header #headerInner #logo { width: 280px; height: 90px; padding: 5px 0 5px 0; float: left;}
 header #headerInner #logo a { background: url('img/header_logo.png') no-repeat ; }
 
-header #headerInner ul.gnav{float:center; position:relative; z-index: 200; width: 375px; height:40px; background: url('img/bg_portal_gNavi.png') no-repeat 15px 35px;}
+header #headerInner ul.gnav{float:right; position:relative; z-index: 200; width: 375px; height:40px; background: url('img/bg_portal_gNavi.png') no-repeat 15px 35px;}
 header #headerInner ul.gnav li{display: inline-block;}
 header #headerInner ul.gnav li a{display: block; height:40px; background: url('img/bg_portal_gNavi.png') no-repeat -40px 0;}
 header #headerInner ul.gnav li a:hover{background-position: 0px 0;}
