@@ -15,7 +15,7 @@ header #headerInner #logo a { background: url('img/header_logo.png') no-repeat ;
 
 
 header #headerInner ul.gnav{float:left; position:relative; z-index: 200; width: 740px; height:30px; padding:34px 0 0 15px; background: url('img/bg_portal_gNavi.png') no-repeat 15px 35px;}
-header #headerInner ul.gnav li{display: inline-block;}
+header #headerInner ul.gnav li{display: none;}
 header #headerInner ul.gnav li a{display: block; height:30px; background: url('img/gnav_magatama.png') no-repeat -30px 0;}
 header #headerInner ul.gnav li a:hover{background-position: 0px 0;}
 header #headerInner ul.gnav .gnav01 a{margin-left:9px;}
