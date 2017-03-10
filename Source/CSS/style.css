@@ -3,3 +3,7 @@
 body {background: url('img/bg_pattern.jpg');}
 container {overflow: hidden; }
 
+/*--------------------------------------------------
+	Header Area
+--------------------------------------------------*/
+header {height:110px; background: url('http://rejetweb.jp/kengakimi/common/css/img/portal_bg.jpg') repeat-x center 0; min-width:1300px;}
