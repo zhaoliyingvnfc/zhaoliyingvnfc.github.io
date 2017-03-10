@@ -13,41 +13,7 @@ header #headerInner {width: 1120px; margin: 0 auto; padding: 0 0 10px 0;}
 header #headerInner #logo { width: 280px; height: 90px; padding:5px 0 5px 0; float: left;}
 header #headerInner #logo a { background: url('img/header_logo.png') no-repeat ; }
 
-header #headerInner ul.gnav{float:left; position:relative; z-index: 200; width: 740px; height:30px; padding:34px 0 0 15px; background: url('img/bg_portal_gNavi.png') no-repeat 15px 35px;}
-header #headerInner ul.gnav li{display: inline-block;}
-header #headerInner ul.gnav li a{display: block; height:30px; background: url('img/gnav_magatama.png') no-repeat -30px 0;}
-header #headerInner ul.gnav li a:hover{background-position: 0px 0;}
-header #headerInner ul.gnav .gnav01 a{margin-left:9px;}
-header #headerInner ul.gnav .gnav01 a img{height:30px; width: 110px;}
-header #headerInner ul.gnav .gnav02 a img{height:30px; width: 95px;}
-header #headerInner ul.gnav .gnav03 a img{height:30px; width: 102px;}
-header #headerInner ul.gnav .gnav04 a img{height:30px; width: 150px;}
-header #headerInner ul.gnav .gnav05 a img{height:30px; width: 133px;}
-header #headerInner ul.gnav .gnav06 a img{height:30px; width: 47px;}
-header #headerInner ul.gnav .gnav07 a img{height:30px; width: 50px;}
 
-header #headerInner #headRight { float: right; }
-header #headerInner #headRight p.headBnr { float: right; padding-top: 10px; }
-header #headerInner #headRight .store, header #headerInner #headRight .related { margin-right: 10px; }
-header #headerInner #headRight #bgm-switch { background: url('img/bg_bgm.png') no-repeat 0 0; width: 191px; height: 68px; float: right; position: relative; margin: 7px 0 0 0; z-index: 200; }
-header #headerInner #headRight #bgm-switch span { display: none; }
-header #headerInner #headRight #bgm-switch #control dd { position: absolute; display: block; width: 38px; height: 35px; top: 0px; background: url('img/switch_bgm.png') no-repeat 0 0;}
-header #headerInner #headRight #bgm-switch #control dd a { display: block; width: 100%; height: 100%; cursor: pointer; background: url('img/switch_bgm.png') no-repeat 0 0; }
-header #headerInner #headRight #bgm-switch #control .on { left: 115px; background-position: 0 0; }
-header #headerInner #headRight #bgm-switch #control .on a { background-position: 0 -35px; }
-header #headerInner #headRight #bgm-switch #control .off { left: 153px; background-position: -38px 0; }
-header #headerInner #headRight #bgm-switch #control .off a { background-position: -38px -35px; }
-header #headerInner #headRight #bgm-switch .btn-control { position: absolute; left: 150px; top: 20px; width: 120px; height: 20px; background: #ddd; }
-header #headerInner #headRight #bgm-switch #bgmTrackList { display: block; position: absolute; width: 175px; height: 14px; left: 15px; top: 40px; overflow: hidden; }
-header #headerInner #headRight #bgm-switch #bgmTrackList #bgmTrackListName { display: block; padding: 1px 17px 0 6px; height: 14px;}
-header #headerInner #headRight #bgm-switch #bgmTrackList #bgmTrackListName p { width: 134px; height: 14px; }
-header #headerInner #headRight #bgm-switch #bgmTrackList ol { padding: 2px 0 10px 7px; list-style: none; background: #000; margin-top: 4px;}
-header #headerInner #headRight #bgm-switch #bgmTrackList ol li { height: 14px; cursor: pointer; width: 175px; margin-top: 10px; }
-header #headerInner #headRight #bgm-switch #bgmTrackList ol li:hover { background-position: 0 -14px; }
-header #headerInner #headRight #bgm-switch #bgmTrackList .bgm01 { width: 125px; background: url('img/bgm_01.png') no-repeat 0 0; }
-header #headerInner #headRight #bgm-switch #bgmTrackList .bgm02 { width: 125px; background: url('img/bgm_02.png') no-repeat 0 0; }
-header #headerInner #headRight #bgm-switch #bgmTrackList .bgm10 { width: 125px; background: url('img/bgm_10.png') no-repeat 0 0; }
-header #headerInner #headRight #bgm-switch #bgmTrackList .bgm14 { width: 125px; background: url('img/bgm_14.png') no-repeat 0 0; }
 
 /*--------------------------------------------------
 	Contents Area
