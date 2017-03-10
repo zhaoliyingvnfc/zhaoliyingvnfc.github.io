@@ -1,3 +1,43 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------
+Body
+-------------------------------------------------------------*/
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 12px;
+	height: 100%;
+	color: #000;
+}
+html {
+	-webkit-text-size-adjust: none;
+}
+/*-----------------------------------------------------------
+pushlink
+-------------------------------------------------------------*/
+
+#pushLink {
+	background: url('./img/bg_pushLink.png') no-repeat 0 0;
+	width: 400px;
+	height: 192px;
+	padding: 37px 37px 0 17px;
+	position: fixed;
+	left: -409px;
+	top: 50%;
+	margin-top: -115px;
+	z-index: 10;
+}
+#pushLink h2 {
+	padding: 7px 0 11px 140px;
+}
+#pushLink a {
+	margin-right: 3px;
+}
 
 /*--------------------------------------------------
 	hasLayout
