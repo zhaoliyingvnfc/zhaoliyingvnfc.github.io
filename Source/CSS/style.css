@@ -13,6 +13,19 @@ header #headerInner {width: 1120px; margin: 0 auto; padding: 0 0 10px 0;}
 header #headerInner #logo { width: 280px; height: 90px; padding: 5px 0 5px 0; float: left;}
 header #headerInner #logo a { background: url('img/header_logo.png') no-repeat ; }
 
+header #headerInner ul.gnav{float:center; position:relative; z-index: 200; width: 740px; height:30px; padding:34px 0 0 15px; background: url('img/bg_portal_gNavi.png') no-repeat 15px 35px;}
+header #headerInner ul.gnav li{display: inline-block;}
+header #headerInner ul.gnav li a{display: block; height:30px; background: url('img/gnav_magatama.png') no-repeat -30px 0;}
+header #headerInner ul.gnav li a:hover{background-position: 0px 0;}
+header #headerInner ul.gnav .gnav01 a{margin-left:9px;}
+header #headerInner ul.gnav .gnav01 a img{height:30px; width: 110px;}
+header #headerInner ul.gnav .gnav02 a img{height:30px; width: 95px;}
+header #headerInner ul.gnav .gnav03 a img{height:30px; width: 102px;}
+header #headerInner ul.gnav .gnav04 a img{height:30px; width: 150px;}
+header #headerInner ul.gnav .gnav05 a img{height:30px; width: 133px;}
+header #headerInner ul.gnav .gnav06 a img{height:30px; width: 47px;}
+header #headerInner ul.gnav .gnav07 a img{height:30px; width: 50px;}
+
 
 
 /*--------------------------------------------------
