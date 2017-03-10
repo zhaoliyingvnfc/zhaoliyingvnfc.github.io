@@ -6,7 +6,7 @@ container {overflow: hidden; }
 /*--------------------------------------------------
 	Header Area
 --------------------------------------------------*/
-header {height:90px; background: url('http://rejetweb.jp/kengakimi/common/css/img/portal_bg.jpg') repeat-x center 0; min-width:1300px;}
+header {height:140px; background: url('http://rejetweb.jp/kengakimi/common/css/img/portal_bg.jpg') repeat-x center 0; min-width:1300px;}
 
 
 header #headerInner {width: 1120px; margin: 0 auto; padding: 0 0 10px 0;}
