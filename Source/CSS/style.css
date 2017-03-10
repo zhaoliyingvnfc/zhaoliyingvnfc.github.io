@@ -10,7 +10,7 @@ header {height:140px; background: url('http://rejetweb.jp/kengakimi/common/css/i
 
 
 header #headerInner {width: 1120px; margin: 0 auto; padding: 0 0 10px 0;}
-header #headerInner #logo { width: 280px; height: 90px; padding: 1px 0 5px 0; float: left;}
+header #headerInner #logo { width: 280px; height: 90px; padding: 5px 0 5px 0; float: left;}
 header #headerInner #logo a { background: url('https://zhaoliyingvnfc.github.io/Source/CSS/img/header_logo.png') no-repeat ; }
 
 
