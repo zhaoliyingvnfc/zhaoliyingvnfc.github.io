@@ -20,7 +20,7 @@ header #headerInner ul.gnav {
     width: 740px;
     height: 30px;
     padding: 34px 0 0 15px;
-    background: url(https://zhaoliyingvnfc.github.io/Source/CSS/img/bg_portal_gNavi.png) no-repeat 15px 35px;
+    background: url('img/bg_portal_gNavi.png') no-repeat 15px 35px;
 }
 
 header #headerInner ul.gnav li{display: inline-block;}
