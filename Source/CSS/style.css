@@ -23,8 +23,10 @@ header #headerInner ul.gnav .gnav01 a img{height:40px; width: 140px;}
 header #headerInner ul.gnav .gnav02 a img{height:40px; width: 120px;}
 header #headerInner ul.gnav .gnav03 a img{height:40px; width: 115px;}
 
-header #headerInner #headRight { float: right; background: url('img/header_logo.png') }
+header #headerInner #headRight { float: right; }
 header #headerInner #headRight p.headBnr { float: right; padding-top: 10px; }
+header #headerInner #headRight #BGM { width: 280px; height: 90px; padding: 5px 0 5px 0; float: right;}
+header #headerInner #BGM { background: url('img/header_logo.png') no-repeat ; }
 header #headerInner #headRight .store, header #headerInner #headRight .related { margin-right: 10px; }
 
 /*--------------------------------------------------
