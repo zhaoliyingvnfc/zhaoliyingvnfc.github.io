@@ -6,12 +6,12 @@ container {overflow: hidden; }
 /*--------------------------------------------------
 	Header Area
 --------------------------------------------------*/
-header {height:140px; background: url('http://rejetweb.jp/kengakimi/common/css/img/portal_bg.jpg') repeat-x center 0; min-width:1300px;}
+header {height: 140px; background: url('http://rejetweb.jp/kengakimi/common/css/img/portal_bg.jpg') repeat-x center 0; min-width:1300px;}
 
 
 header #headerInner {width: 1120px; margin: 0 auto; padding: 0 0 10px 0;}
 header #headerInner #logo { width: 280px; height: 90px; padding: 5px 0 5px 0; float: left;}
-header #headerInner #logo a { background: url('https://zhaoliyingvnfc.github.io/Source/CSS/img/header_logo.png') no-repeat ; }
+header #headerInner #logo a { background: url('img/header_logo.png') no-repeat ; }
 
 
 
