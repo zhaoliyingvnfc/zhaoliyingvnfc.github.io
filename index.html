@@ -9,41 +9,120 @@
 <meta property="og:description" content="Cộng đồng Dĩnh Hỏa Trùng Việt Nam" />
 <meta property="og:site_name" content="DHT VN">
 <meta property="og:type" content="website" />
+
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<link rel="stylesheet" type="text/css" href="Source/CSS/import.css" media="all" />
+
+<link rel="stylesheet" type="text/css" href="Source/CSS/index.css" media="all" />
+
 <!-- <link rel="stylesheet" type="text/css" href="css/colorbox.css" media="all" /> -->
-<script src="https://cdn.rawgit.com/zhaoliyingvnfc/zhaoliyingvnfc.github.io/master/Source/JS/jquery-1.7.2.min.js"></script>
+<script src="Source/JS/jquery-1.7.2.min.js"></script>
+<script src="Source/JS/common.js"></script>
+<script src="Source/JS/script.js"></script>
+<script src="Source/JS/typed.js"></script>
+
+
+
 </head> 
-  
 <body>
-  
- <div id="container">
-<header>
-  <div id="headerInner">
-    <h1 id="logo"><a href="http://dhtvn.cf/">DHT VN</a></h1>
-    <ul class="gnav">
-<li class="gnav01"><a href="#about/"><img src="http://rejetweb.jp/kengakimi/common/img/0.png" alt="About"></a></li>
-<li class="gnav02"><a href="#film/"><img src="http://rejetweb.jp/kengakimi/common/img/0.png" alt="Film"></a></li>
-<li class="gnav03"><a href="http://rejetweb.jp/kengakimi/vita/" class="normalLink"><img src="http://rejetweb.jp/kengakimi/common/img/0.png" alt="News"></a></li>
-</ul>
-    
-  </div>
-  </header>
-   
-   <div id ="wrapper"> 
-     <div id="wrapperInner">
-       <section id="contents" class="topPage">
-         
-       <!--/section--> </section>
-     </div>
-   </div>
-  
-   <footer> 
-     <div class="footerInner">
-       		<div class="inner">
-       </div>
-     </div>
-   </footer>
-   
-  </div>
-  </body>
+
+<video poster="" id="bgvid" playsinline autoplay loop>
+<source src="Source/Video/10 years.mp4" type="video/mp4">
+</video>
+<div id="introduction">
+<h1>Đôi lời</h1>
+<p>Trang web được lập bởi đội ngũ admin Tường Thành Vĩnh Cửu
+<script src="typed.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="main.css" media="all" />
+
+
+        <div class="type-wrap">
+            <div id="typed-strings">
+                <p>Nếu như bạn là một DHT only chân chính</p>
+                <p>Xin đừng đưa cô ấy tới chốn thị phi như cfs</p>
+				<p>Hãy bênh cô ấy một cách khôn ngoan,<br/>chửi đúng người và nói lý với đúng người</p>
+				<p> Trân trọng nỗ lực của cô ấy mà không phải tâng bốc</p>
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+        </div>
+		<script>
+    document.addEventListener('DOMContentLoaded', function(){
+
+        Typed.new("#typed", {
+            stringsElement: document.getElementById('typed-strings'),
+            typeSpeed: 20,
+            backDelay: 2700,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to null for infinite loop
+            loopCount: null,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        var resetElement = document.querySelector('.reset');
+        if(resetElement) {
+            resetElement.addEventListener('click', function() {
+                document.getElementById('typed')._typed.reset();
+            });
+        }
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+	
+	/* Go home */ 
+$(document).ready(function(){
+	
+	$('body').click(function(){
+				
+		window.location = "https://zhaoliyingvnfc.github.io/home.html";
+		
+	});
+	
+});
+
+    </script>
+	
+	<style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+</div></body>
