@@ -49,10 +49,20 @@
             </div>
             <span id="typed" style="white-space:pre;"></span>
         </div>
-		<a href="https://zhaoliyingvnfc.github.io/home" >TRANG CHỦ</a>
-            </div>
-</body>
+		<div id="home"><a href="https://zhaoliyingvnfc.github.io/home" >TRANG CHỦ</a>
+			<audio id="beep-three" controls="controls" preload="auto" __idm_id__="-2147441663" style="display:none">
+				<source src="Source/Audio/click.mp3">
+            </div></div>
 		<script>
+		//click sound
+
+var beepThree = $("#beep-three")[0];
+$("#home a")
+	.mouseenter(function() {
+		beepThree.pause();
+		beepThree.play();
+	});
+		
     document.addEventListener('DOMContentLoaded', function(){
 
         Typed.new("#typed", {
@@ -88,6 +98,7 @@
 		
 	});
 	
+
 
     </script>
 	
@@ -128,3 +139,4 @@
             100% { opacity:1; }
         }
     </style>
+</div></body>
