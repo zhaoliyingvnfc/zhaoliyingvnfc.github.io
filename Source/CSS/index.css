@@ -39,6 +39,7 @@ video {
   font-size: 1.3rem;
   margin-top: 200px;
   line-height: 170%;
+  text-shadow: horizontal-offset vertical-offset blur color;
 }
 
 h1 {
@@ -58,6 +59,8 @@ a {
 }
 a:hover{
   background:rgba(0,0,0,0.9);
+  color: rgb(255, 255, 102);
+  font-weight:bold;
 }
 @media screen and (max-width: 500px) { 
   div{width:70%;} 
