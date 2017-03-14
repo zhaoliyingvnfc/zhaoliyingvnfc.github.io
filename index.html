@@ -80,8 +80,7 @@ $(document).ready(function(){
 	
 	$('body').click(function(){
 				
-		window.location.href = "https://zhaoliyingvnfc.github.io/home.html";
-		return false;
+		page.should have_content('https://zhaoliyingvnfc.github.io/home') ;
 	});
 	
 });
