@@ -82,13 +82,3 @@ var TxtType = function(el, toRotate, period) {
 	
 });
 
-//Click login home
-$(document).ready(function(){
-	
-	$('body').click(function(){
-				
-		window.location = "https://zhaoliyingvnfc.github.io/home.html";
-		
-	});
-	
-});
