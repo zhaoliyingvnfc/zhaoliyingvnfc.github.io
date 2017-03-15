@@ -12,33 +12,116 @@
 <meta property="og:type" content="website" />
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <link rel="stylesheet" type="text/css" href="Source/CSS/import.css" media="all" />
+<link rel="stylesheet" type="text/css" href="Source/CSS/slideimg.css" media="all" />
+<link rel="stylesheet" type="text/css" href="Source/Header-player/videoplaylist.css" media="all" />
+<link rel="stylesheet" href="Source/Header-player/skin/skin.css">
+
+
 <!-- <link rel="stylesheet" type="text/css" href="css/colorbox.css" media="all" /> -->
-<script src="https://cdn.rawgit.com/zhaoliyingvnfc/zhaoliyingvnfc.github.io/master/Source/JS/jquery-1.7.2.min.js"></script>
+<script type='text/javascript' src='Source/JS/common.js'></script>
+<script type='text/javascript' src='Source/JS/jquery.mousewheel.min.js'></script>
+   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+   <script src="Source/Header-player/flowplayer.min.js"></script>
+
 </head> 
   
-<body>
-  
+
  <div id="container">
 <header>
   <div id="headerInner">
-    <h1 id="logo"><a href="http://dhtvn.cf/">DHT VN</a></h1>
-    <ul class="gnav">
-<li class="gnav01"><a href="#about/"><img src="http://rejetweb.jp/kengakimi/common/img/0.png" alt="About"></a></li>
-<li class="gnav02"><a href="#film/"><img src="http://rejetweb.jp/kengakimi/common/img/0.png" alt="Film"></a></li>
-<li class="gnav03"><a href="http://rejetweb.jp/kengakimi/vita/" class="normalLink"><img src="http://rejetweb.jp/kengakimi/common/img/0.png" alt="News"></a></li>
-</ul>
+    <div class="container">
+
+<div id="classic" class="is-closeable">
+ 
+   <video>
+    <source src="Source/Header-player/trailer/SKT.MP4" type='video/mp4'/>
+	    <source src="Source/Header-player/trailer/The Eternal Wave.MP4" type='video/mp4'/>
+
+      </video>
+ 
+   <div class="fp-playlist">
+      <a href="Source/Header-player/trailer/SKT.MP4" id="thumb1"></a>
+      <a href="Source/Header-player/trailer/The Eternal Wave.MP4" id="thumb2"></a>
+      
+   </div>
+ 
+</div>
+
+<script>
+// wait until DOM is ready
+$(function () {
+ 
+    // manual installation into container element with id="classic"
+    $("#classic").flowplayer({
+        customPlaylist: true,
+        splash: true,
+        ratio: 9/16,
+        hlsQualities: [-1, 1, 3, 6, 7]
+    });
+ 
+});
+</script>
+	
+   <div id="content-slider">
+      <div id="slider">  <!-- Slider container -->
+         <div id="mask">  <!-- Mask -->
+
+         <ul>
+         <li id="first" class="firstanimation">  <!-- ID for tooltip and class for animation -->
+         <a href="#"> <img src="Source/img/slide_0.jpg" alt="Cougar"/> </a>
+         </li>
+
+         <li id="second" class="secondanimation">
+         <a href="#"> <img src="Source/img/slide_1.jpg" alt="Lions"/> </a>
+         </li>
+
+         <li id="third" class="thirdanimation">
+         <a href="#"> <img src="Source/img/slide_2.jpg" alt="Snowalker"/> </a>
+         </li>
+
+         <li id="fourth" class="fourthanimation">
+         <a href="#"> <img src="Source/img/slide_3.jpg" alt="Howling"/> </a>
+         </li>
+
+         <li id="fifth" class="fifthanimation">
+         <a href="#"> <img src="Source/img/slide_4.jpg" alt="Sunbathing"/> </a>
+         </li>
+		 
+		 
+         </ul>
+
+         </div>  <!-- End Mask -->
+         <div class="progress-bar"></div>  <!-- Progress Bar -->
+      </div>  <!-- End Slider Container -->
+   </div>
+</div>
     
   </div>
+
   </header>
-   
+  
+  <a id="jumper" href="#wrapperInner"><img class="shake" id="jump_down" src="Source/CSS/img/jump_down.png" /></a>
+<script>$(document).ready(function() {
+  $("#jumper").on("click", function( e ) {
+
+    e.preventDefault();
+
+    $("body, html").animate({ 
+      scrollTop: $( $(this).attr('href') ).offset().top 
+    }, 600);
+
+  });
+});
+</script>
+<body>
    <div id ="wrapper"> 
      <div id="wrapperInner">
        <section id="contents" class="topPage">
-         
+         fasfsafasfasf
        <!--/section--> </section>
      </div>
    </div>
-  
+    </body>
    <footer> 
      <div class="footerInner">
        		<div class="inner">
@@ -47,4 +130,4 @@
    </footer>
    
   </div>
-  </body>
+
