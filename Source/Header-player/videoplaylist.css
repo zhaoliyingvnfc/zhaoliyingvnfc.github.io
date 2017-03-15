@@ -1,0 +1,84 @@
+is-closeable: {  
+	background: rgba(1, 4, 35, 0.2);
+	width: 700px;
+	height: 450px;
+      float: left;
+
+}
+
+#classic {
+/* player (and playlist) background */
+  background-color: #333;
+  background-image: url("trailer/skt_preview.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 600px;
+  height: 350px;
+  top: 100px;
+  
+  
+}
+
+#classic .fp-playlist {
+/* playlist */
+  position: absolute;
+  bottom: 32%;
+  left: 11%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 12;
+  -webkit-box-shadow: 0 0 30px #333;
+  -moz-box-shadow: 0 0 30px #333;
+  box-shadow: 0 0 30px #333;
+}
+#classic .fp-playlist a {
+/* playlist entry */
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin: 0 5px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 4px solid #333;
+  background: url("trailer/thumbs.jpg") -1px -1px no-repeat;
+}
+#classic .fp-playlist a:hover,
+#classic .fp-playlist a.is-active {
+  border-color: #fff;
+}
+#classic .fp-playlist #thumb2 {
+  background-position: -80px -1px;
+}
+
+#classic.is-ready .fp-playlist,
+#classic.is-loading .fp-playlist {
+  bottom: 6%;
+  left: 1%;
+}
+#classic.is-ready .fp-playlist a,
+#classic.is-loading .fp-playlist a {
+  width: 70px;
+  height: 70px;
+}
+@media (max-width: 900px) {
+  #classic .fp-playlist a {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width: 700px) {
+  #classic .fp-playlist a {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 570px) {
+  #classic .fp-playlist a {
+    width: 55px;
+    height: 55px;
+  }
+}
+
