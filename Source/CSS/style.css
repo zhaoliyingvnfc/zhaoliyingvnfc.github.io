@@ -1,14 +1,16 @@
 @charset "UTF-8";
 @font-face {font-family: UTM_Aquarelle; src: url('font/UTM Aquarelle.ttf') format('truetype');}
 
-body {background-color: #000;}
+body {background-image: url('img/background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;}
 container {overflow: hidden; background-color: #000; }
+
 /*--------------------------------------------------
 	Header Area
 --------------------------------------------------*/
 header {height: 600px; background: url('img/header.png') repeat ; background-color: #000; min-width:1300px; padding-top: 10px; 
 
-/*border-bottom: 1px solid #3f3e43;*/
 	-webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
 	transition: background .3s ease-in-out,padding .3s ease-in-out;
@@ -19,7 +21,7 @@ header {height: 600px; background: url('img/header.png') repeat ; background-col
 
 
 header #headerInner {width: 1120px; margin: 0 auto; padding: 0 0 10px 0;}
-header #headerInner a { text-decoration: none; font-family: 'UTM_Aquarelle'; font-size: 300%; }
+header #headerInner a { text-decoration: none; font-family: 'UTM_Aquarelle'; font-size: 300%; color: #fff;}
 
 
 header #headerInner #headRight { float: right; }
@@ -32,15 +34,17 @@ header #headerInner #headRight .store, header #headerInner #headRight .related {
  padding-left: 600px;}
 }
 
+#jumper_down {box-shadow: 20px 10px 20px #aaa;};
 /*--------------------------------------------------
 	Contents Area
 --------------------------------------------------*/
 
-#wrapper {background: url('img/header.jpg') repeat-x center -110px; min-width:1300px;}
+
+#wrapper { min-width: 1300px;}
 
 #wrapper #loader { position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 100; }
-#wrapper #loader p { background: url('img/loader.gif') no-repeat 0 0; width: 16px; height: 16px; position: absolute; left: 51%; top: 51%; text-indent: -9999px; }
-#wrapper #contents { height: 759px; }
+#wrapper #loader p { background-color: #000; width: 16px; height: 16px; position: absolute; left: 51%; top: 51%; text-indent: -9999px; }
+#wrapper #contents { background-image: url('img/loader.gif') no-repeat 0 0; height: 759px; }
 #wrapper #contents.topPage { height: 800px; }
 #wrapper #contents .contentsInner { width: 1120px; margin: 0 auto; position: relative; /*min-width:1120px;*/ }
 
