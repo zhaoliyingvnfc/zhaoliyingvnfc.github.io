@@ -16,8 +16,8 @@
 <link rel="stylesheet" type="text/css" href="Source/Header-player/videoplaylist.css" media="all" />
 <link rel="stylesheet" href="Source/Header-player/skin/skin.css">
 	 <link rel="stylesheet" type="text/css" href="Source/slider/slider_source/header_slider.css">
-<script src="Source/JS/index.js"></script>
-  <script src='Source/JS/TweenMax.min.js'></script>
+      <link rel="stylesheet" href="style.css">
+
 
 <!-- <link rel="stylesheet" type="text/css" href="css/colorbox.css" media="all" /> -->
 <script type='text/javascript' src='Source/JS/common.js'></script>
@@ -27,15 +27,18 @@
 <script src="Source/slider/slider_source/jquery.js"></script>
 <script src="Source/slider/slider_source/header_slider.js"></script>
 <script src="Source/slider/slider_source/initslider-1.js"></script>
-<script type='text/javascript' src='Source/JS/Fireflies.js'></script>
-	<style></style>
+<script src="index.js"></script>
+  <script src='TweenMax.min.js'></script>
+
 </head> 
   
  <div id="container">
 
 <header>
+ 
   <div id="headerInner">
     <div class="container">
+	
 <!-- Insert to your webpage where you want to display the slider -->
     <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:600px;margin:0px auto 48px; top: 50px; left: -200px;">
         <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
@@ -53,7 +56,61 @@
             </ul>
         </div>
     </div>
+	
+	
     <!-- End of body section HTML codes -->
+	
+	
+	<script>/*
+a Pen by DIACO : twitter.com/Diaco_ml || codepen.io/MAW
+powered by GSAP : http://www.greensock.com/
+*/
+
+var total=40,
+  container=document.getElementById('container'),
+  w=window.innerWidth,
+  h=window.innerHeight,
+  Tweens=[],
+  SPs=1;
+
+
+
+for (var i=total;i--;){ 
+  var Div=document.createElement('div');
+  TweenLite.set(Div,{attr:{class:'dot'},x:R(w),y:R(h),opacity:0});
+  container.appendChild(Div);	Anim(Div);	Tweens.push(Div);
+};
+
+function Anim(elm){ 
+  elm.Tween=TweenLite.to(elm,R(20)+10,{bezier:{values:[{x:R(w),y:R(h)},{x:R(w),y:R(h)}]},opacity:R(1),scale:R(1)+0.5,delay:R(2),onComplete:Anim,onCompleteParams:[elm]})
+};
+
+for(var i=total;i--;){
+  Tweens[i].Tween.play()};
+
+window.addEventListener("resize", resize);
+
+function R(max){return Math.random()*max};
+
+function resize() {
+  
+  w = window.innerWidth;
+  h = window.innerHeight;
+  
+  for (var i = 0; i < total; i++) {
+    
+    var fireFly = Tweens[i];
+
+    TweenLite.killTweensOf(fireFly);
+    
+    Anim(fireFly);
+  }
+}
+
+
+
+
+</script>
 <script>
 // wait until DOM is ready
 $(function () {
