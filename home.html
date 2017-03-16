@@ -16,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="Source/Header-player/videoplaylist.css" media="all" />
 <link rel="stylesheet" href="Source/Header-player/skin/skin.css">
 	 <link rel="stylesheet" type="text/css" href="Source/slider/slider_source/header_slider.css">
-      <link rel="stylesheet" href="Source/CSS/style.css">
+      <link rel="stylesheet" href="style.css">
 
 
 <!-- <link rel="stylesheet" type="text/css" href="css/colorbox.css" media="all" /> -->
@@ -30,6 +30,33 @@
 <script type='text/javascript' src='Source/JS/index.js'></script>
 <script type='text/javascript' src='Source/JS/TweenMax.min.js'></script>
 
+	<script>var total=80,
+    container=document.getElementById('container'),
+    w=window.innerWidth,
+    h=window.innerHeight,
+    Tweens=[],
+    SPs=1;
+
+
+
+for (var i=total;i--;){ 
+	var Div=document.createElement('div');
+	TweenLite.set(Div,{attr:{class:'dot'},x:R(w),y:R(h),opacity:0});
+	container.appendChild(Div);	Anim(Div);	Tweens.push(Div);
+};
+
+function Anim(elm){ 
+	  top: $.dot.offsetTop + $.dot.random(($.dot.eleHeight)),	//offsets
+	  left: $.dot.offsetLeft + $.dot.random(($.dot.eleWidth)),
+	  opacity: $.dot.opacity($.dot.settings.twinkle)
+  }, (($.dot.random(10) + 5) * 2000),function(){  $.dot.fly(sp) } );
+};
+
+for(var i=total;i--;){
+  Tweens[i].Tween.play()};
+
+
+function R(max){return Math.random()*max};</script>
 
 </head> 
   
