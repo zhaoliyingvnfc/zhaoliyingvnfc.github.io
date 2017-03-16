@@ -15,38 +15,44 @@
 <link rel="stylesheet" type="text/css" href="Source/CSS/slideimg.css" media="all" />
 <link rel="stylesheet" type="text/css" href="Source/Header-player/videoplaylist.css" media="all" />
 <link rel="stylesheet" href="Source/Header-player/skin/skin.css">
+	 <link rel="stylesheet" type="text/css" href="Source/slider/slider_source/header_slider.css">
 
 
 <!-- <link rel="stylesheet" type="text/css" href="css/colorbox.css" media="all" /> -->
 <script type='text/javascript' src='Source/JS/common.js'></script>
 <script type='text/javascript' src='Source/JS/jquery.mousewheel.min.js'></script>
-   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-   <script src="Source/Header-player/flowplayer.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="Source/Header-player/flowplayer.min.js"></script>
+<script src="Source/slider/slider_source/jquery.js"></script>
+<script src="Source/slider/slider_source/header_slider.js"></script>
+<script src="Source/slider/slider_source/initslider-1.js"></script>
+<script type='text/javascript' src='Source/JS/Fireflies.js'></script>
 
 </head> 
   
-
  <div id="container">
+
 <header>
   <div id="headerInner">
     <div class="container">
-
-<div id="classic" class="is-closeable">
- 
-   <video allowfullscreen="true">
-    <source src="Source/Header-player/trailer/SKT.MP4" type='video/mp4'/>
-   <source src="http://zhaoliyingvnfc.github.io/Source/Header-player/trailer/The Eternal Wave.MP4" type='video/mp4'/>
-
-      </video>
- 
-   <div class="fp-playlist">
-      <a href="Source/Header-player/trailer/SKT.MP4" id="thumb1"></a>
-      <a href="Source/Header-player/trailer/The Eternal Wave.MP4" id="thumb2"></a>
-      
-   </div>
- 
-</div>
-
+<!-- Insert to your webpage where you want to display the slider -->
+    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:600px;margin:0px auto 48px; top: 50px; left: -200px;">
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="Source/slider/media/skt_preview.png" alt="[Tester-Drama] Đặc công hoàng phi Sở Kiều Truyện"  title="[Tester-Drama] Đặc công hoàng phi Sở Kiều Truyện" />
+                <video preload="none" src="Source/slider/media/SKT.MP4" ></video>
+                </li>
+                <li><img src="Source/slider/media/tsd_preview.png" alt="[Tester-Movie] Tân sóng điện mãi không ngừng"  title="[Tester-Movie] Tân sóng điện mãi không ngừng" />
+                <video preload="none" src="Source/slider/media/The%20Eternal%20Wave.MP4" ></video>
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="Source/slider/media/skt_preview-tn.png" alt="[Tester-Drama] Đặc công hoàng phi Sở Kiều Truyện" title="[Tester-Drama] Đặc công hoàng phi Sở Kiều Truyện" /></li>
+                <li><img src="Source/slider/media/tsd_preview-tn.png" alt="[Tester-Movie] Tân sóng điện mãi không ngừng" title="[Tester-Movie] Tân sóng điện mãi không ngừng" /></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of body section HTML codes -->
 <script>
 // wait until DOM is ready
 $(function () {
