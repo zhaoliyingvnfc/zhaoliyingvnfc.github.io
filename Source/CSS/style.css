@@ -59,7 +59,16 @@ footer .footerInner .inner ul li.share iframe { display: inline-block; width: 95
 footer .footerInner .inner .footerRight { float: right; width: 365px; color: #ababab; text-align: right; }
 footer .footerInner .inner .footerRight .copyright { padding: 5px 0 10px 0; }
 
-
+dot{
+  width:3px;
+  height:3px;
+  position:absolute;
+  background-color:#5cf5ce;
+  box-shadow:0px 0px 10px 2px #f9ee9a;
+  border-radius: 20px;
+  z-index:2;
+  top: -300px;
+}
 
 
 
