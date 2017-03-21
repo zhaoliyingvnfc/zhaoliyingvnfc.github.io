@@ -209,8 +209,147 @@ $(function () {
    <div id ="wrapper"> 
      <div id="wrapperInner">
        <section id="contents" class="topPage">
-         fasfsafasfasf
-       <!--/section--> </section>
+<div class="flipbook-viewport">
+  <div class="container">
+    <div class="flipbook">
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/01.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/07.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/08.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/09.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/10.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/11.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/12.jpg)"></div>
+      <div style="background-image:url(https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/12.jpg)"></div>
+    </div>
+  </div>
+</div>
+
+<script>//window.addEventListener('resize', resize);
+document.body.addEventListener('touchmove', function(e) {
+  e.preventDefault();
+  // e.stopPropagation();
+});
+function loadApp() {
+  console.log('Load App');
+  var size = getSize();
+  //console.log(size);
+  // Create the flipbook
+  $('.flipbook').turn({
+      // Width
+     width: size.width,
+    
+      
+      // Height
+     height: size.height,
+      // Elevation
+      elevation: 50,
+      
+      // Enable gradients
+      gradients: true,
+      
+      // Auto center this flipbook
+      autoCenter: true,
+      
+  });
+ $('.flipbook').turn('display', 'single');
+  
+  
+}
+function getSize() {
+  console.log('get size');
+ // var width = document.body.clientWidth;
+ // var height = document.body.clientHeight;
+  var width = 640;
+  var height = 832;
+  return {
+    width: width,
+    height: height
+  }
+}
+function resize() {
+  console.log('resize event triggered');
+  var size = getSize();
+  console.log(size);
+  if (size.width > size.height) { // landscape
+    $('.flipbook').turn('display', 'double');
+  }
+  else {
+    $('.flipbook').turn('display', 'single');
+  }
+  $('.flipbook').turn('size', size.width, size.height);
+}
+// Load App
+loadApp();
+ 
+</script>
+
+<style>html,
+body {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+body {
+  overflow: hidden;
+  background-color: #fcfcfc;
+  margin: 0;
+  padding: 0;
+}
+.flipbook-viewport {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.flipbook-viewport .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+.flipbook-viewport .flipbook {
+  width: 1000px;
+  height: 600px;
+}
+.flipbook-viewport .page {
+  width: 640px;
+  height: 960px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.flipbook .page {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.flipbook-viewport .page img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+.flipbook-viewport .shadow {
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  -moz-transition: -moz-box-shadow 0.5s;
+  -o-transition: -webkit-box-shadow 0.5s;
+  -ms-transition: -ms-box-shadow 0.5s;
+  -webkit-box-shadow: 0 0 20px #ccc;
+  -moz-box-shadow: 0 0 20px #ccc;
+  -o-box-shadow: 0 0 20px #ccc;
+  -ms-box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 20px #ccc;
+}</style>       <!--/section--> </section>
      </div>
    </div>
     </body>
