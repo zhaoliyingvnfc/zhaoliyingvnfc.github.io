@@ -7,9 +7,9 @@
 <head>
 <title>Using turn.js and the new zoom feature</title>
 <meta name="viewport" content="width = 1050, user-scalable = no" />
-<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
-<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
-<script type="text/javascript" src="../../lib/hash.js"></script>
+<script type="text/javascript" src="jquery.min.1.7.js"></script>
+<script type="text/javascript" src="modernizr.2.5.3.min.js"></script>
+<script type="text/javascript" src="hash.js"></script>
 
 </head>
 <body>
@@ -416,9 +416,9 @@ function loadApp() {
 
 yepnope({
 	test : Modernizr.csstransforms,
-	yep: ['../../lib/turn.js'],
-	nope: ['../../lib/turn.html4.min.js'],
-	both: ['../../lib/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
+	yep: ['lib/turn.js'],
+	nope: ['turn.html4.min.js'],
+	both: ['zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
 	complete: loadApp
 });
 
